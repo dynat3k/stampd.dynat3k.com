@@ -107,61 +107,80 @@
 
         <!-- # intro
         ================================================== -->
+       
         <section id="intro" class="s-intro">
-
             <div class="s-intro__bg"></div>
-
+            
             <div class="row s-intro__content">
                 <div class="column lg-12">
-
-                    <div class="s-intro__content-top">
-                        <h1>
-                            Coming Soon!
-                        </h1>
-                        <h2>
-                            Discover a new world near you
-                        </h2>
-                    </div> <!-- end s-intro__content-top --> 
-
-                    <div class="s-intro__content-sep">
-                        <span></span>
-                        <span>Time left until launching</span>
-                        <span></span>
-                    </div> <!-- end s-intro__content-sep --> 
                     
-                    <div class="s-intro__content-counter counter">
-                        <div class="counter__time">
-                            <span class="ss-days">365</span>
-                            <span>Days</span>
+                    <!-- Grid: Main container -->
+                    <div class="grid-container">
+                        
+                        <!-- Left Grid: Nested Phone Grid -->
+                        <div class="grid-item s-intro__content-top app">
+                            <div class="nested-grid">
+                                <!-- First box with phone image -->
+                                <div class="nested-grid-item">
+                                    <img src="images\iphone.png" alt="Phone Image 1" class="nested-phone-image" />
+                                    <img src="images/App Store.png" class="app-btn apple" alt="App-store-button">
+                                </div>
+                                <!-- Second box with phone image -->
+                                <div class="nested-grid-item">
+                                    <img src="images\android_2.png" alt="Phone Image 2" class="nested-phone-image" />
+                                    <img src="images\Google Play.png" class="app-btn droid" alt="Google-play-button">
+                                </div>
+                            </div>
                         </div>
-                        <div class="counter__time">
-                            <span class="ss-hours">03</span>
-                            <span>Hours</span>
+                        
+                        <!-- Right Grid: Coming Soon -->
+                        <div class="grid-item">
+                            <div class="s-intro__content-top">
+                                <h1>Coming Soon!</h1>
+                                <h2>Discover a new world near you</h2>
+                            </div>
+                            
+                            <div class="s-intro__content-sep">
+                                <span></span>
+                                <span>Time left until launch</span>
+                                <span></span>
+                            </div>
+                            
+                            <div class="s-intro__content-counter counter">
+                                <div class="counter__time">
+                                    <span class="ss-days">365</span>
+                                    <span>Days</span>
+                                </div>
+                                <div class="counter__time">
+                                    <span class="ss-hours">03</span>
+                                    <span>Hours</span>
+                                </div>
+                                <div class="counter__time minutes">
+                                    <span class="ss-minutes">01</span>
+                                    <span>Mins</span>
+                                </div>
+                                <div class="counter__time">
+                                    <span class="ss-seconds">55</span>
+                                    <span>Secs</span>
+                                </div>
+                            </div>
+                            
+                            <div class="s-intro__content-subscribe">
+                                <form id="mc-form" class="mc-form">
+                                    <input type="email" name="contact_email" id="mce-EMAIL" class="u-fullwidth text-center" 
+                                        placeholder="Email Address" required />
+                                    <input type="submit" name="subscribe" value="Notify Me" class="btn--small btn--primary u-fullwidth" />
+                                    <div class="mc-status"></div>
+                                </form>
+                            </div>
                         </div>
-                        <div class="counter__time minutes">
-                            <span class="ss-minutes">01</span>
-                            <span>Mins</span>
-                        </div>
-                        <div class="counter__time">
-                            <span class="ss-seconds">55</span>
-                            <span>Secs</span>
-                        </div>
-                    </div> <!-- end counter --> 
-                    
-                    <div class="s-intro__content-subscribe">
-                        <form id="mc-form" class="mc-form">
-                            <input type="email" name="contact_email" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Email Address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required/>
-                            <input type="submit" name="subscribe" value="Notify Me" class="btn--small btn--primary u-fullwidth" />
-                            <div class="mc-status"></div>
-                        </form>
-                    </div> <!-- end s-intro__content-subscribe -->     
-
-                </div>    
-            </div> <!-- intro__content -->
-
-            
-
-        </section> <!-- end s-intro -->
+                    </div>
+                </div>
+            </div>
+        </section>
+           
+       
+       
 
 
           <!-- Modal -->

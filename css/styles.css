@@ -3362,6 +3362,87 @@ img.u-pull-left {
     opacity       : 0.5;
 }
 
+
+/* --------------------------------------------------------------------
+ * ## intro grid
+ * -------------------------------------------------------------------- */
+
+/* Ensure html and body grow with content */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%; /* Allow height to expand */
+    overflow: auto;   /* Enable scrolling */
+}
+
+/* General Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    gap: 20px;
+    align-items: center;
+}
+
+.nested-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two items side by side initially */
+    gap: 10px;
+}
+
+.nested-grid-item {
+    text-align: center;
+}
+
+.nested-phone-image {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.app-btn {
+    max-width: 250px;
+    height: auto;
+}
+
+
+
+
+/* Mobile View: Stack Sections Vertically */
+@media (max-width: 480px) {
+    /* Enable scrolling */
+    html, body {
+        height: auto;
+        overflow: auto;
+    }
+
+    /* Stack sections vertically */
+    .grid-container {
+        display: block; /* Remove grid layout */
+    }
+
+    /* Stack nested grid items (images and buttons) */
+    .nested-grid {
+        display: block; /* Stack items vertically */
+    }
+
+    .nested-grid-item {
+        margin-bottom: 20px;
+        text-align: center; /* Center content */
+    }
+
+    .nested-phone-image {
+        max-width: 100%; /* Make images responsive */
+        height: auto;
+        margin: 0 auto 10px; /* Center image with spacing below */
+    }
+
+    .app-btn {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
 /* --------------------------------------------------------------------
  * ## intro content
  * -------------------------------------------------------------------- */
@@ -3407,7 +3488,7 @@ img.u-pull-left {
 .s-intro__content-top h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
-    font-size    : calc(var(--text-size) * 6);
+    font-size    : calc(var(--text-size) * 3);
     line-height  : 1.333;
     color        : var(--color-1);
     margin-top   : 0;
@@ -3466,7 +3547,7 @@ img.u-pull-left {
 .s-intro .counter__time {
     justify-content: center;
     font-weight    : 600;
-    font-size      : 15rem;
+    font-size      : 10rem;
     text-align     : center;
     color          : white;
     margin-right   : calc(1.125 * var(--space));
