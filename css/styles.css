@@ -3372,7 +3372,8 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%; /* Allow height to expand */
-    overflow: auto;   /* Enable scrolling */
+    overflow-x:hidden;
+    overflow-y: auto;
 }
 
 /* General Grid Layout */
@@ -3381,6 +3382,8 @@ html, body {
     grid-template-columns: 1fr 1fr; /* Two columns layout */
     gap: 20px;
     align-items: center;
+    min-height: 100vh; /* Ensure the grid container spans the full viewport height */
+    padding-bottom: 20px; /* Add some padding to avoid bottom content cutoff */
 }
 
 .nested-grid {
@@ -3404,20 +3407,28 @@ html, body {
     height: auto;
 }
 
-
-
-
 /* Mobile View: Stack Sections Vertically */
 @media (max-width: 480px) {
     /* Enable scrolling */
     html, body {
         height: auto;
-        overflow: auto;
+        overflow-x: hidden;
     }
 
     /* Stack sections vertically */
     .grid-container {
-        display: block; /* Remove grid layout */
+        display: grid; /* Retain grid layout for mobile */
+        grid-template-columns: 1fr; 
+        min-height: auto;
+    }
+
+    /* Reorder items for mobile */
+    .grid-item:first-child {
+        order: 2; /* Make "Coming Soon" section appear first */
+    }
+
+    .grid-item:last-child {
+        order: 1; /* Make "App" section appear second */
     }
 
     /* Stack nested grid items (images and buttons) */
