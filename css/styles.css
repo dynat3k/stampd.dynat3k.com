@@ -3503,8 +3503,8 @@ img.u-pull-left {
 
 .s-intro__content-top h1 {
     font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-size    : calc(var(--text-size) * 3);
+    font-weight: 500;
+    font-size    : calc(var(--text-size) * 4);
     line-height  : 1.333;
     color        : var(--color-1);
     margin-top   : 0;
