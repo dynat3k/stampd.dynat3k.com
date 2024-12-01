@@ -3383,7 +3383,7 @@ img.u-pull-left {
     gap: 15px;
     align-items: center;
     min-height: 50vh; 
-    padding-bottom: 20px; 
+    padding-bottom: 40px; 
 }
 
 .nested-grid {
@@ -3402,13 +3402,20 @@ img.u-pull-left {
     margin-bottom: 10px;
 }
 
-.droid{
-    margin-top: 10px;
-}
 
 .app-btn {
     max-width: 250px;
     height: auto;
+}
+
+.droid{
+    margin-top: 45px;
+    margin-bottom: 1px;
+}
+
+.apple{
+    margin-top: 35px;
+    margin-bottom: 1px;
 }
 
 /* Mobile View: Stack Sections Vertically */
