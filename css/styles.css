@@ -3382,7 +3382,7 @@ img.u-pull-left {
     grid-template-columns: 1fr 1fr; /* Two columns layout */
     gap: 15px;
     align-items: center;
-    min-height: 100vh; 
+    min-height: 50vh; 
     padding-bottom: 20px; 
 }
 
