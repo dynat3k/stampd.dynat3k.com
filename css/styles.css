@@ -3428,34 +3428,34 @@ img.u-pull-left {
 
     /* Stack sections vertically */
     .grid-container {
-        display: grid; /* Retain grid layout for mobile */
+        display: grid; 
         grid-template-columns: 1fr; 
         min-height: auto;
     }
 
     /* Reorder items for mobile */
     .grid-item:first-child {
-        order: 2; /* Make "Coming Soon" section appear first */
+        order: 2; 
     }
 
     .grid-item:last-child {
-        order: 1; /* Make "App" section appear second */
+        order: 1; 
     }
 
     /* Stack nested grid items (images and buttons) */
     .nested-grid {
-        display: block; /* Stack items vertically */
+        display: block; 
     }
 
     .nested-grid-item {
         margin-bottom: 20px;
-        text-align: center; /* Center content */
+        text-align: center; 
     }
 
     .nested-phone-image {
-        max-width: 100%; /* Make images responsive */
+        max-width: 100%; 
         height: auto;
-        margin: 0 auto 10px; /* Center image with spacing below */
+        margin: 0 auto 10px; 
     }
 
     .app-btn {
@@ -3463,6 +3463,56 @@ img.u-pull-left {
         height: auto;
     }
 }
+
+/* Tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Enable scrolling */
+    html, body {
+        height: 100%;
+        overflow: auto; 
+    }
+
+    /* Adjust grid layout for tablet */
+    .grid-container {
+        display: grid; 
+        grid-template-columns: 1fr 3fr; /* Two equal columns for better layout on tablets */
+        gap: 20px; 
+        min-height: auto; 
+    }
+
+
+    .grid-item:first-child {
+        order: 1;
+    }
+
+    .grid-item:last-child {
+        order: 2;
+    }
+
+    /* Adjust nested grid for better spacing on tablets */
+    .nested-grid {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .nested-grid-item {
+        margin-bottom: 15px; 
+        text-align: center; 
+    }
+
+    .nested-phone-image {
+        max-width: 80%; 
+        height: auto;
+        margin: 0 auto; 
+    }
+
+    .app-btn {
+        max-width: 80%; 
+        height: auto;
+    }
+}
+
 
 
 
