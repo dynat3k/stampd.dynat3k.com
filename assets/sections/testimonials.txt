@@ -1,0 +1,71 @@
+   <!-- Start Testimonials Area -->
+    <section class="testimonials section">
+        <img class="testi-patern1" src="assets/images/testimonial/testi-patern.svg" alt="#">
+        <img class="testi-patern2" src="assets/images/testimonial/testi-patern.svg" alt="#">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                    <div class="testimonial-slider">
+                        <!-- Start Single Testimonial -->
+                        <div class="single-testimonial">
+                            <div class="text">
+                                <div class="brand-icon">
+                                    <img src="https://via.placeholder.com/140x60" alt="#">
+                                </div>
+                                <p>"It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has"</p>
+                            </div>
+                            <div class="author">
+                                <img src="https://via.placeholder.com/160x160" alt="#">
+                                <h4 class="name">
+                                    Musharof Chowdhury
+                                    <span class="deg">CEO - Ayro UI</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- End Single Testimonial -->
+                        <!-- Start Single Testimonial -->
+                        <div class="single-testimonial">
+                            <div class="text">
+                                <div class="brand-icon">
+                                    <img src="https://via.placeholder.com/140x60" alt="#">
+                                </div>
+                                <p>"It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has"</p>
+                            </div>
+                            <div class="author">
+                                <img src="https://via.placeholder.com/160x160" alt="#">
+                                <h4 class="name">
+                                    Musharof Chowdhury
+                                    <span class="deg">CEO - GrayGrids</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- End Single Testimonial -->
+                        <!-- Start Single Testimonial -->
+                        <div class="single-testimonial">
+                            <div class="text">
+                                <div class="brand-icon">
+                                    <img src="https://via.placeholder.com/140x60" alt="#">
+                                </div>
+                                <p>"It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has"</p>
+                            </div>
+                            <div class="author">
+                                <img src="https://via.placeholder.com/160x160" alt="#">
+                                <h4 class="name">
+                                    Naimur Rahman
+                                    <span class="deg">CEO - WpthemesGrid</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- End Single Testimonial -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonial Area -->
