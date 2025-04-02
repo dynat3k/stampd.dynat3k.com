@@ -1,200 +1,1123 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js" >
+<html class="no-js" lang="zxx">
+
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Appvilla - Creative Landing Page HTML Template.</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stamp°D</title>
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-    <script>
-        document.documentElement.classList.remove('no-js');
-        document.documentElement.classList.add('js');
-    </script>
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
-     <!-- Google Font
-    ================================================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
- <!-- Email JS
-    ================================================== -->
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "SPqrBYo6r3l3Kf9qq",
-      });
-   })();
-</script>
 </head>
 
-<body id="top">
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
+    <!-- /End Preloader -->
 
-
-    <!-- page wrap
-    ================================================== -->
-    <div id="page" class="s-pagewrap">
-
-
-        <!-- # site header 
-        ================================================== -->
-        <header class="s-header">
-
-            <div class="row s-header__inner">
-                <div class="column lg-12 s-header__block">
-
-                    <div class="s-header__logo">
-                        <a class="logo" href="index.html">
-                            <img src="images/stamp_d_logo (2).png" alt="Homepage">
-                        </a>
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo/white-logo.svg" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="#home" class="page-scroll active"
+                                            aria-label="Toggle navigation">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#howItWorks" class="page-scroll"
+                                            aria-label="Toggle navigation">How it Works</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#overview" class="page-scroll"
+                                            aria-label="Toggle navigation">Overview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#pricing" class="page-scroll"
+                                            aria-label="Toggle navigation">Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#team" class="page-scroll" aria-label="Toggle navigation">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll dd-menu collapsed" href="#blog" data-bs-toggle="collapse"
+                                            data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">Blog</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-4">
+                                            <li class="nav-item"><a href="blog-grid-sidebar.html">Blog Grid Sidebar</a>
+                                            </li>
+                                            <li class="nav-item"><a href="blog-single.html">Blog Single</a></li>
+                                            <li class="nav-item"><a href="blog-single-sidebar.html">Blog Single
+                                                    Sibebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact.html" aria-label="Toggle navigation">Contact</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            <div class="button add-list-button">
+                                <a href="contact.html" class="btn">Get it now</a>
+                            </div>
+                        </nav>
+                        <!-- End Navbar -->
                     </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
 
-                    <ul class="s-header__social">
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=61566028155160&sk=about" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
-                                <span class="u-screen-reader-text">Facebook</span>
-                            </a>
-                        </li>
+    <!-- Start Hero Area -->
+    <section id="home" class="hero-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="hero-content">
+                        <h1 class="wow fadeInLeft" data-wow-delay=".4s">Nyoka, Write a Title Here please.</h1>
+                        <p class="wow fadeInLeft" data-wow-delay=".6s">This is a space to welcome visitors to the site. And briefly 
+                            introduce them to the app and why they would want to use it.</p>
+                        <div class="button wow fadeInLeft" data-wow-delay=".8s">
+                            <a href="javascript:void(0)" class="btn"> Get it Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
+                        <img src="/assets/images/Group 1 (1).png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
 
-                        <li>
-                            <a target="_blank" href="https://www.instagram.com/_stamp.d/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
-                                <span class="u-screen-reader-text">Instagram</span>
-                            </a>
-                        </li>
+    <!-- Start Features Area -->
+    <section id="howItWorks" class="features section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Features</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Your Experience Gets Better And Better Over Time.
+                        </h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+                        <i class="lni lni-cloud-upload"></i>
+                        <h3>Push to Deploy</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page at its layout.</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+                        <i class="lni lni-lock"></i>
+                        <h3>SSL Certificates</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page at its layout.</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+                        <i class="lni lni-reload"></i>
+                        <h3>Simple Queues</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page at its layout.</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+                        <i class="lni lni-shield"></i>
+                        <h3>Advanced Security</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page at its layout.</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+                        <i class="lni lni-cog"></i>
+                        <h3>Powerful API</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page at its layout.</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+                        <i class="lni lni-layers"></i>
+                        <h3>Database Backups</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page at its layout.</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Features Area -->
 
-                    </ul> <!-- end s-header__social -->
-                    
-                </div> <!-- end s-header__block -->
-            </div> <!-- end s-header__inner -->
+    <!-- Start App Info Area -->
+    <section id="overview" class="app-info section">
+        <div class="container">
+            <div class="info-one">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <!-- Start Info Text -->
+                        <div class="info-text wow fadeInLeft" data-wow-delay=".3s">
+                            <div class="main-icon">
+                                <i class="lni lni-inbox"></i>
+                            </div>
+                            <h2>1,25,000 Customers Using The Application!</h2>
+                            <p>Collaborate over projects with your team and clients optimised for mobile and tablet
+                                don't
+                                let slow page speeds drive our innovative platform empowers anyone to convert clicks
+                                ou'll
+                                publish your first landing page in minutes.</p>
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Get Started</a>
+                            </div>
+                        </div>
+                        <!-- End Info Text -->
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="info-image wow fadeInRight" data-wow-delay=".5s">
+                            <img class="ss1" src="https://via.placeholder.com/650x715" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-one style2">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="info-image wow fadeInLeft" data-wow-delay=".3s">
+                            <img class="ss1" src="https://via.placeholder.com/650x715" alt="#">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <!-- Start Info Text -->
+                        <div class="info-text wow fadeInRight" data-wow-delay=".5s">
+                            <div class="main-icon">
+                                <i class="lni lni-layout"></i>
+                            </div>
+                            <h2>Seamless Loyalty</h2>
+                            <p>Collaborate over projects with your team and clients optimised for mobile and tablet
+                                don't
+                                let slow page speeds drive our innovative platform empowers anyone to convert clicks
+                                ou'll
+                                publish your first landing page in minutes.</p>
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Get Started</a>
+                            </div>
+                        </div>
+                        <!-- End Info Text -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End App Info Area -->
 
-        </header> <!-- end s-header -->
+    <!-- Start Achievement Area -->
+    <section class="our-achievement section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+                    <div class="title">
+                        <h2>Trusted by developers from over 80 planets</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
+                                <h3 class="counter"><span id="secondo1" class="countup" cup-end="100">100</span>%</h3>
+                                <p>satisfaction</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
+                                <h3 class="counter"><span id="secondo2" class="countup" cup-end="120">120</span>K</h3>
+                                <p>Happy Users</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
+                                <h3 class="counter"><span id="secondo3" class="countup" cup-end="125">125</span>k+</h3>
+                                <p>Downloads</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Achievement Area -->
 
+    <!-- Start Pricing Table Area -->
+    <section id="pricing" class="pricing-table section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">pricing</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Pricing Plan</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".2s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Hobby</h4>
+                            <p>All the basics for starting a new business</p>
+                            <div class="price">
+                                <h2 class="amount">$12<span class="duration">/mo</span></h2>
+                            </div>
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Buy Hobby</a>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+                        <div class="table-content">
+                            <h4 class="middle-title">What's Included</h4>
+                            <!-- Table List -->
+                            <ul class="table-list">
+                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>
+                            </ul>
+                            <!-- End Table List -->
+                        </div>
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".4s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Freelancer</h4>
+                            <p>All the basics for starting a new business</p>
+                            <div class="price">
+                                <h2 class="amount">$24<span class="duration">/mo</span></h2>
+                            </div>
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Buy Freelancer</a>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+                        <div class="table-content">
+                            <h4 class="middle-title">What's Included</h4>
+                            <!-- Table List -->
+                            <ul class="table-list">
+                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>
+                            </ul>
+                            <!-- End Table List -->
+                        </div>
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".6s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Startup</h4>
+                            <p>All the basics for starting a new business</p>
+                            <div class="price">
+                                <h2 class="amount">$32<span class="duration">/mo</span></h2>
+                            </div>
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Buy Startup</a>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+                        <div class="table-content">
+                            <h4 class="middle-title">What's Included</h4>
+                            <!-- Table List -->
+                            <ul class="table-list">
+                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>
+                            </ul>
+                            <!-- End Table List -->
+                        </div>
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".8s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Enterprise</h4>
+                            <p>All the basics for starting a new business</p>
+                            <div class="price">
+                                <h2 class="amount">$48<span class="duration">/mo</span></h2>
+                            </div>
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Buy Enterprise</a>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+                        <div class="table-content">
+                            <h4 class="middle-title">What's Included</h4>
+                            <!-- Table List -->
+                            <ul class="table-list">
+                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>
+                            </ul>
+                            <!-- End Table List -->
+                        </div>
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Pricing Table Area -->
 
-        <!-- # intro
-        ================================================== -->
-       
-        <section id="intro" class="s-intro">
-            <div class="s-intro__bg"></div>
-            
-            <div class="row s-intro__content">
-                <div class="column lg-12">
-                    
-                    <!-- Grid: Main container -->
-                    <div class="grid-container">
-                        
-                        <!-- Left Grid: Nested Phone Grid -->
-                        <div class="grid-item s-intro__content-top app">
-                            <div class="nested-grid">
-                                <!-- First box with phone image -->
-                                <div class="nested-grid-item">
-                                    <img src="images/iphone.png" alt="Phone Image 1" class="nested-phone-image" />
-                                    <img src="images/coming_soon_ios.png" class="app-btn apple" alt="App-store-button">
+    <!-- Start Team Area -->
+    <section id="team" class="team section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Team</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Meat our team</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Team -->
+                    <div class="single-team wow fadeInUp" data-wow-delay=".2s">
+                        <div class="image">
+                            <img src="https://via.placeholder.com/350x230" alt="#">
+                        </div>
+                        <div class="content">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 col-12">
+                                    <div class="text">
+                                        <h3><a href="javascript:void(0)">Leonard Krasner</a></h3>
+                                        <h5>Senior Designer</h5>
+                                    </div>
                                 </div>
-                                <!-- Second box with phone image -->
-                                <div class="nested-grid-item">
-                                    <img src="images/android_2.png" alt="Phone Image 2" class="nested-phone-image" />
-                                    <img src="images/coming_soon_android.png" class="app-btn droid" alt="Google-play-button">
+                                <div class="col-lg-5 col-12">
+                                    <ul class="social">
+                                        <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
+                                        </li>
+                                        <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Right Grid: Coming Soon -->
-                        <div class="grid-item">
-                            <div class="s-intro__content-top">
-                                <h1>Coming Soon!!</h1>
-                                <h2>Discover a new world near you</h2>
-                            </div>
-                            
-                            <div class="s-intro__content-sep">
-                                <span></span>
-                                <span>Time left until launch</span>
-                                <span></span>
-                            </div>
-                            
-                            <div class="s-intro__content-counter counter">
-                                <div class="counter__time">
-                                    <span class="ss-days">365</span>
-                                    <span>Days</span>
+                    </div>
+                    <!-- End Single Team -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Team -->
+                    <div class="single-team wow fadeInUp" data-wow-delay=".4s">
+                        <div class="image">
+                            <img src="https://via.placeholder.com/350x230" alt="#">
+                        </div>
+                        <div class="content">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 col-12">
+                                    <div class="text">
+                                        <h3><a href="javascript:void(0)">Leonard Krasner</a></h3>
+                                        <h5>Senior Designer</h5>
+                                    </div>
                                 </div>
-                                <div class="counter__time">
-                                    <span class="ss-hours">03</span>
-                                    <span>Hours</span>
-                                </div>
-                                <div class="counter__time minutes">
-                                    <span class="ss-minutes">01</span>
-                                    <span>Mins</span>
-                                </div>
-                                <div class="counter__time">
-                                    <span class="ss-seconds">55</span>
-                                    <span>Secs</span>
+                                <div class="col-lg-5 col-12">
+                                    <ul class="social">
+                                        <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
+                                        </li>
+                                        <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            
-                            <div class="s-intro__content-subscribe">
-                                <form id="mc-form" class="mc-form">
-                                    <input type="email" name="contact_email" id="mce-EMAIL" class="u-fullwidth text-center" 
-                                        placeholder="Email Address" required />
-                                    <input type="submit" name="subscribe" value="Notify Me" class="btn--small btn--primary u-fullwidth" />
-                                    <div class="mc-status"></div>
+                        </div>
+                    </div>
+                    <!-- End Single Team -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Team -->
+                    <div class="single-team wow fadeInUp" data-wow-delay=".6s">
+                        <div class="image">
+                            <img src="https://via.placeholder.com/350x230" alt="#">
+                        </div>
+                        <div class="content">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 col-12">
+                                    <div class="text">
+                                        <h3><a href="javascript:void(0)">Leonard Krasner</a></h3>
+                                        <h5>Senior Designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <ul class="social">
+                                        <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
+                                        </li>
+                                        <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Team -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Team Area -->
+
+    <!-- Start Testimonials Area -->
+    <section class="testimonials section">
+        <img class="testi-patern1" src="assets/images/testimonial/testi-patern.svg" alt="#">
+        <img class="testi-patern2" src="assets/images/testimonial/testi-patern.svg" alt="#">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                    <div class="testimonial-slider">
+                        <!-- Start Single Testimonial -->
+                        <div class="single-testimonial">
+                            <div class="text">
+                                <div class="brand-icon">
+                                    <img src="https://via.placeholder.com/140x60" alt="#">
+                                </div>
+                                <p>"It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has"</p>
+                            </div>
+                            <div class="author">
+                                <img src="https://via.placeholder.com/160x160" alt="#">
+                                <h4 class="name">
+                                    Musharof Chowdhury
+                                    <span class="deg">CEO - Ayro UI</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- End Single Testimonial -->
+                        <!-- Start Single Testimonial -->
+                        <div class="single-testimonial">
+                            <div class="text">
+                                <div class="brand-icon">
+                                    <img src="https://via.placeholder.com/140x60" alt="#">
+                                </div>
+                                <p>"It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has"</p>
+                            </div>
+                            <div class="author">
+                                <img src="https://via.placeholder.com/160x160" alt="#">
+                                <h4 class="name">
+                                    Musharof Chowdhury
+                                    <span class="deg">CEO - GrayGrids</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- End Single Testimonial -->
+                        <!-- Start Single Testimonial -->
+                        <div class="single-testimonial">
+                            <div class="text">
+                                <div class="brand-icon">
+                                    <img src="https://via.placeholder.com/140x60" alt="#">
+                                </div>
+                                <p>"It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has"</p>
+                            </div>
+                            <div class="author">
+                                <img src="https://via.placeholder.com/160x160" alt="#">
+                                <h4 class="name">
+                                    Naimur Rahman
+                                    <span class="deg">CEO - WpthemesGrid</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- End Single Testimonial -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonial Area -->
+
+    <!-- Start Call To Action Area -->
+    <section class="section call-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                    <div class="cta-content">
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Install Appvilla and Start Using</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".4s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable.</p>
+                        <div class="button wow fadeInUp" data-wow-delay=".6s">
+                            <a href="javascript:void(0)" class="btn"><i class="lni lni-apple"></i> App Store</a>
+                            <a href="javascript:void(0)" class="btn btn-alt"><i class="lni lni-play-store"></i> Google
+                                Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Call To Action Area -->
+
+    <!-- Start Faq Area -->
+    <section class="faq section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Faq</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Frequently Asked Questions</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="title"><span class="serial">01</span>How Do I Contact Customer
+                                        Services?</span><i class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur sit
+                                        amet ante nec vulputate. Nulla aliquam, justo auctor consequat tincidunt, arcu
+                                        erat mattis lorem, lacinia lacinia dui enim at eros. Pellentesque ut gravida
+                                        augue. Duis ac dictum tellus</p>
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute. non cupidatat skateboard dolor
+                                        brunch. Foosd truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt alqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim ke ffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="title"><span class="serial">02</span> Material types can you work
+                                        with?</span><i class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute. non cupidatat skateboard dolor
+                                        brunch. Foosd truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt alqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim ke ffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur sit
+                                        amet ante nec vulputate. Nulla aliquam, justo auctor consequat tincidunt, arcu
+                                        erat mattis lorem, lacinia lacinia dui enim at eros. Pellentesque ut gravida
+                                        augue. Duis ac dictum tellus</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="title"><span class="serial">03</span>Can I have multiple activities in
+                                        a single feature?</span><i class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas expedita,
+                                        repellendus est nemo cum quibusdam optio, voluptate hic a tempora facere, nihil
+                                        non itaque alias similique quas quam odit consequatur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <span class="title"><span class="serial">04</span>How Clients Can Consult With
+                                        online?</span><i class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute. non cupidatat skateboard dolor
+                                        brunch. Foosd truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt alqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident iure ab nisi,
+                                        magnam vitae. Laboriosam laborum suscipit recusandae officia laudantium,
+                                        consectetur adipisci voluptates doloremque quisquam. Id rerum iusto
+                                        reprehenderit assumenda!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <span class="title"><span class="serial">05</span>Can I share resources between
+                                        features?</span><i class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute. non cupidatat skateboard dolor
+                                        brunch. Foosd truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt alqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Faq Area -->
+
+    <!-- Start Blog Section Area -->
+    <section id="blog" class="blog-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Blogs</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Latest News</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Blog -->
+                    <div class="single-blog wow fadeInUp" data-wow-delay=".2s">
+                        <div class="blog-img">
+                            <a href="blog-single-sidebar.html">
+                                <img src="https://via.placeholder.com/370x215" alt="#">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <a class="category" href="javascript:void(0)">Blog</a>
+                            <h4>
+                                <a href="blog-single-sidebar.html">Boost your conversion rate</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt dolore
+                                magna.</p>
+                            <div class="autor">
+                                <a href="javascript:void(0)"><img src="https://via.placeholder.com/100x100" alt="#"></a>
+                                <a href="javascript:void(0)" class="name">Roel Aufderhar</a>
+                                <ul class="meta-content">
+                                    <li>
+                                        <a href="javascript:void(0)">Mar 15,2023</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">5 min read</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Blog -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Blog -->
+                    <div class="single-blog wow fadeInUp" data-wow-delay=".4s">
+                        <div class="blog-img">
+                            <a href="blog-single-sidebar.html">
+                                <img src="https://via.placeholder.com/370x215" alt="#">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <a class="category" href="javascript:void(0)">Video</a>
+                            <h4>
+                                <a href="blog-single-sidebar.html">How to use search engine</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt dolore
+                                magna.</p>
+                            <div class="autor">
+                                <a href="javascript:void(0)"><img src="https://via.placeholder.com/100x100" alt="#"></a>
+                                <a href="javascript:void(0)" class="name">Jenifer Zuliya</a>
+                                <ul class="meta-content">
+                                    <li>
+                                        <a href="javascript:void(0)">Feb 10,2023</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">7 min read</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Blog -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Blog -->
+                    <div class="single-blog wow fadeInUp" data-wow-delay=".6s">
+                        <div class="blog-img">
+                            <a href="blog-single-sidebar.html">
+                                <img src="https://via.placeholder.com/370x215" alt="#">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <a class="category" href="javascript:void(0)">Marketing</a>
+                            <h4>
+                                <a href="blog-single-sidebar.html">Awesome ways to boost sales</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt dolore
+                                magna.</p>
+                            <div class="autor">
+                                <a href="javascript:void(0)"><img src="https://via.placeholder.com/100x100" alt="#"></a>
+                                <a href="javascript:void(0)" class="name">Roel Aufderhar</a>
+                                <ul class="meta-content">
+                                    <li>
+                                        <a href="javascript:void(0)">Jan 20,2023</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">6 min read</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Blog -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog Section Area -->
+
+    <!-- Start Client Logo Section Area -->
+    <div class="client-logo-section">
+        <div class="container">
+            <div class="client-logo-wrapper">
+                <div class="client-logo-carousel d-flex align-items-center justify-content-between">
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/230x95" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/230x95" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/230x95" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/230x95" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/230x95" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Client Logo Section Area -->
+
+
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <!-- Start Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer f-about">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/white-logo.svg" alt="#">
+                                </a>
+                            </div>
+                            <p>Making the world a better place through constructing elegant hierarchies.</p>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-pinterest"></i></a></li>
+                            </ul>
+                            <p class="copyright-text">Designed and Developed by <a href="https://uideck.com/"
+                                    rel="nofollow" target="_blank">UIdeck</a>
+                            </p>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <!-- Single Widget -->
+                                <div class="single-footer f-link">
+                                    <h3>Solutions</h3>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">Marketing</a></li>
+                                        <li><a href="javascript:void(0)">Analytics</a></li>
+                                        <li><a href="javascript:void(0)">Commerce</a></li>
+                                        <li><a href="javascript:void(0)">Insights</a></li>
+                                        <li><a href="javascript:void(0)">Promotion</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End Single Widget -->
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <!-- Single Widget -->
+                                <div class="single-footer f-link">
+                                    <h3>Support</h3>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">Pricing</a></li>
+                                        <li><a href="javascript:void(0)">Documentation</a></li>
+                                        <li><a href="javascript:void(0)">Guides</a></li>
+                                        <li><a href="javascript:void(0)">API Status</a></li>
+                                        <li><a href="javascript:void(0)">Live Support</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End Single Widget -->
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <!-- Single Widget -->
+                                <div class="single-footer f-link">
+                                    <h3>Company</h3>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">About Us</a></li>
+                                        <li><a href="javascript:void(0)">Our Blog</a></li>
+                                        <li><a href="javascript:void(0)">Jobs</a></li>
+                                        <li><a href="javascript:void(0)">Press</a></li>
+                                        <li><a href="javascript:void(0)">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End Single Widget -->
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <!-- Single Widget -->
+                                <div class="single-footer f-link">
+                                    <h3>Legal</h3>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">Terms & Conditions</a></li>
+                                        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                        <li><a href="javascript:void(0)">Catering Services</a></li>
+                                        <li><a href="javascript:void(0)">Customer Relations</a></li>
+                                        <li><a href="javascript:void(0)">Innovation</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End Single Widget -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+        <!-- Start Footer Newsletter -->
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-5 col-12">
+                            <div class="title">
+                                <h3>Subscribe to our newsletter</h3>
+                                <p>The latest news, articles, and resources, sent to your inbox weekly.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <div class="form">
+                                <form action="#" method="get" target="_blank" class="newsletter-form">
+                                    <input name="EMAIL" placeholder="Your email address" type="email">
+                                    <div class="button">
+                                        <button class="btn">Subscribe<span class="dir-part"></span></button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-           
-       
-       
-
-
-          <!-- Modal -->
-           
-        <div id="confirmationModal">
-            <p>Thank you. We'll keep you updated on all the latest news!</p>
-            <button id='modal-button'>Close</button>
         </div>
+        <!-- End Footer Newsletter -->
+    </footer>
+    <!--/ End Footer Area -->
 
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        //======== tiny slider
+        tns({
+            container: '.client-logo-carousel',
+            autoplay: true,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            gutter: 15,
+            nav: false,
+            controls: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                540: {
+                    items: 2,
+                },
+                768: {
+                    items: 3,
+                },
+                992: {
+                    items: 4,
+                }
+            }
+        });
 
+        //========= testimonial 
+        tns({
+            container: '.testimonial-slider',
+            items: 3,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: true,
+            controls: false,
+            controlsText: ['<i class="lni lni-arrow-left"></i>', '<i class="lni lni-arrow-right"></i>'],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                540: {
+                    items: 1,
+                },
+                768: {
+                    items: 1,
+                },
+                992: {
+                    items: 1,
+                },
+                1170: {
+                    items: 1,
+                }
+            }
+        });
+
+        //====== counter up 
+        var cu = new counterUp({
+            start: 0,
+            duration: 2000,
+            intvalues: true,
+            interval: 100,
+            append: " ",
+        });
+        cu.start();
+    </script>
 </body>
+
 </html>
