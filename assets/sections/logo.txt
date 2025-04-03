@@ -1,0 +1,25 @@
+  <!-- Start Client Logo Section Area -->
+    <div class="client-logo-section">
+        <div class="container">
+            <div class="client-logo-wrapper">
+                <div class="client-logo-carousel d-flex align-items-center justify-content-between">
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/230x95" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/230x95" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/230x95" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/230x95" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/230x95" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Client Logo Section Area -->
