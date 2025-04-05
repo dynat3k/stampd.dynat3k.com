@@ -22,6 +22,10 @@ Index Of css
 /*======================================
     Variables
 ========================================*/
+:root {
+  --vspace-0_5           : calc(0.5 * var(--space));
+  --space                : calc(3.4rem * var(--multiplier));
+}
 /*======================================
     Normalize CSS
 ========================================*/
@@ -44,6 +48,10 @@ p {
   padding: 0;
   font-size: 15px;
   line-height: 24px;
+}
+
+.counter-title{
+  text-align: center;
 }
 
 * {
@@ -158,6 +166,11 @@ h2 {
 
 h3 {
   font-size: 30px;
+}
+
+.counter{
+  font-size: 80px;
+  color: white;
 }
 
 h4 {
@@ -2001,6 +2014,83 @@ ol {
   padding: 180px 0 120px 0;
   background: #ff6b81;
 }
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.single-achievement {
+  padding: 1rem;
+}
+
+.counter {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.counter-title {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.time-left{
+  color: rgb(255, 255, 255);
+  background-color: black;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center !important; 
+}
+
+
+.newsletter-form input[type="email"] {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* .newsletter-form .btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} */
+
+.btn-outline-dark {
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* .newsletter-form .btn:hover {
+  background-color: #0056b3; /* slightly darker on hover */
+
+
+@media (max-width: 600px) {
+  .newsletter-form .input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-form .btn {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .countdown-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area {

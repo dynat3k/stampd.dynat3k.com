@@ -1,0 +1,30 @@
+<div class="col-lg-5 col-md-12 col-12">
+                    <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-4 col-12">
+                                <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
+                                    <h3 class="counter"><span id="secondo1" class="countup" cup-end="100">91</span></h3>
+                                    <p class="counter-title">Days</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-12">
+                                <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
+                                    <h3 class="counter"><span id="secondo2" class="countup" cup-end="120">07</span></h3>
+                                    <p class="counter-title">Hours</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-12">
+                                <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
+                                    <h3 class="counter"><span id="secondo3" class="countup" cup-end="125">45</span></h3>
+                                    <p class="counter-title">Mins</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-12">
+                                <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
+                                    <h3 class="counter"><span id="secondo3" class="countup" cup-end="125">24</span></h3>
+                                    <p class="counter-title">Secs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
