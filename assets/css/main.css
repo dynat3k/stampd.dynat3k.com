@@ -1077,7 +1077,7 @@ ol {
   font-weight: 600;
   display: block;
   margin-bottom: 8px;
-  color: #ff6b81;
+  color: #FF6F61;
   text-transform: uppercase;
 }
 
@@ -1171,7 +1171,7 @@ ol {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  background: #ff6b81;
+  background: #FF6F61;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1401,7 +1401,7 @@ ol {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background: #ff6b81;
+  background: #FF6F61;
   -webkit-animation: preloader-fx 1.6s linear infinite;
   animation: preloader-fx 1.6s linear infinite;
 }
@@ -1567,16 +1567,16 @@ ol {
     border-radius: 6px;
   }
   .header .navbar .navbar-nav .nav-item a:hover {
-    color: #ff6b81 !important;
+    color: #FF6F61 !important;
   }
   .header .navbar .navbar-nav .nav-item a.active {
-    color: #ff6b81 !important;
+    color: #FF6F61 !important;
   }
   .header .navbar-nav .nav-item {
     margin: 0;
   }
   .header .navbar-nav .nav-item:hover a {
-    color: #ff6b81;
+    color: #FF6F61;
   }
   .header .navbar-nav .nav-item a {
     padding: 12px 16px !important;
@@ -1600,7 +1600,7 @@ ol {
     padding: 12px 12px;
   }
   .header .navbar-nav .nav-item .sub-menu .nav-item a:hover {
-    color: #ff6b81 !important;
+    color: #FF6F61 !important;
   }
   .header .navbar-nav .nav-item a {
     color: #051441;
@@ -1618,7 +1618,7 @@ ol {
   }
   .header .navbar-nav .nav-item .sub-menu li.active {
     background: #fff !important;
-    color: #ff6b81 !important;
+    color: #FF6F61 !important;
   }
   .header .navbar-nav .nav-item .sub-menu .nav-item {
     margin: 0 !important;
@@ -1628,13 +1628,13 @@ ol {
   }
   .header .navbar-nav .nav-item .sub-menu li:hover {
     background: #fff !important;
-    color: #ff6b81 !important;
+    color: #FF6F61 !important;
   }
   .header .navbar-nav .nav-item a {
     font-size: 14px;
   }
   .header .navbar-nav .nav-item a:hover {
-    color: #ff6b81;
+    color: #FF6F61;
   }
 }
 
@@ -1653,7 +1653,7 @@ ol {
 
 .header .button .btn:hover {
   background-color: #fff;
-  color: #ff6b81;
+  color: #FF6F61;
 }
 
 .header .navbar-brand img {
@@ -1683,7 +1683,7 @@ ol {
 }
 
 .header.sticky .button .btn {
-  background-color: #ff6b81;
+  background-color: #FF6F61;
   color: #fff;
   border-color: transparent;
 }
@@ -1715,7 +1715,7 @@ ol {
 }
 
 .sticky .navbar .navbar-nav .nav-item a.active {
-  color: #ff6b81;
+  color: #FF6F61;
 }
 
 .sticky .navbar .navbar-nav .nav-item a {
@@ -1746,7 +1746,7 @@ ol {
 .navbar-area.sticky {
   position: fixed;
   z-index: 99;
-  background: #ff6b81;
+  background: #FF6F61;
   -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.3s ease-out 0s;
@@ -1820,7 +1820,7 @@ ol {
 }
 
 .sticky .navbar-nav .nav-item:hover a {
-  color: #ff6b81;
+  color: #FF6F61;
 }
 
 .navbar-nav .nav-item a {
@@ -1949,7 +1949,7 @@ ol {
 }
 
 .navbar-nav .nav-item .sub-menu .nav-item a:hover {
-  color: #ff6b81;
+  color: #FF6F61;
 }
 
 .navbar-nav .nav-item .sub-menu.left-menu {
@@ -1976,7 +1976,7 @@ ol {
 }
 
 .navbar-nav .nav-item .sub-menu > li.active > a {
-  color: #ff6b81 !important;
+  color: #FF6F61 !important;
 }
 
 .navbar-nav .nav-item .sub-menu > li > a {
@@ -2012,7 +2012,7 @@ ol {
 .hero-area {
   position: relative;
   padding: 180px 0 120px 0;
-  background: #ff6b81;
+  background: #FF6F61;
 }
 
 .sign-up span{
@@ -2427,7 +2427,7 @@ ol {
   border-radius: 8px;
   color: #fff;
   font-size: 20px;
-  background-color: #ff6b81;
+  background-color: #FF6F61;
   margin-bottom: 30px;
 }
 
@@ -2497,7 +2497,7 @@ ol {
   line-height: 60px;
   text-align: center;
   display: inline-block;
-  background-color: #ff6b81;
+  background-color: #FF6F61;
   color: #fff;
   font-size: 20px;
   border-radius: 7px;
@@ -4011,7 +4011,7 @@ blockquote span {
 .team .single-team .text h5 {
   font-size: 14px;
   font-weight: 400;
-  color: #ff6b81;
+  color: #FF6F61;
   display: block;
   margin-top: 4px;
 }
@@ -4057,7 +4057,7 @@ blockquote span {
     Call To Action CSS
 ========================================*/
 .call-action {
-  background-color: #ff6b81;
+  background-color: #FF6F61;
 }
 
 .call-action .cta-content {
