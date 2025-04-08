@@ -18,6 +18,19 @@
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
 
+
+     <!-- Email JS
+    ================================================== -->
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+publicKey: "SPqrBYo6r3l3Kf9qq",
+});
+})();
+</script>
 </head>
 
 <body>
@@ -274,74 +287,77 @@
     <!-- End App Info Area -->
 
     <!-- Start KIT Area -->
-    <section id="home" class="hero-area sign-up">
+    <section id="home" class="hero-area py-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 col-md-12 col-12">
-                    <div class="hero-content">
-                        <h1 class="wow fadeInLeft" data-wow-delay=".4s">Sign up to stay in the loop</h1>
-                        <p class="wow fadeInLeft" data-wow-delay=".6s">Here is where we share details on why users 
-                            should sign-up with 1-2 sentences on what they will get when they join the email list.</p>
-                            <div class="footer-newsletter">
-                                <div class="container">
-                                  <div class="inner-content">
-                                    <div class="row align-items-center">
-                                      <div class="col-lg-8 col-md-7 col-12">
-                                        <div class="form">
-                                            <form action="#" method="get" target="_blank" class="newsletter-form">
-                                                <div class="row g-2">
-                                                  <div class="col-12 col-md-8">
-                                                    <input name="EMAIL" type="email" class="form-control" placeholder="Your email address" required>
-                                                  </div>
-                                                  <div class="col-12 col-md-4">
-                                                    <button type="submit" class="btn btn-outline-dark">
-                                                        <i class="bi bi-send-fill me-2"></i>
-                                                      </button>
-                                                  </div>
-                                                </div>
-                                              </form>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              
+          <div class="row align-items-center">
+            
+            <!-- Sign-Up Form Column -->
+            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+              <div class="hero-content">
+                <h1 class="wow fadeInLeft" data-wow-delay=".4s">Sign up to stay in the loop</h1>
+                <p class="wow fadeInLeft" data-wow-delay=".6s">
+                  Here is where we share details on why users should sign up with 1–2 sentences on what they’ll get when they join the email list.
+                </p>
+                <form id='mc-form' class="newsletter-form mt-4">
+                  <div class="row g-2">
+                    <div class="col-12 col-md-8">
+                      <input id='mce-EMAIL' name="EMAIL" type="email" class="form-control" placeholder="Your email address" required>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-12 col-12">
-                    <div class="s-intro__content-sep">
-                        <span></span>
-                        <span class="time-left">Time left until launch</span>
-                        <span></span>
-                    </div>
-                    <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
-                      <div class="countdown-grid">
-                        <div class="single-achievement">
-                          <h3 class="counter"><span id="days">00</span></h3>
-                          <p class="counter-title">Days</p>
-                        </div>
-                        <div class="single-achievement">
-                          <h3 class="counter"><span id="hours">00</span></h3>
-                          <p class="counter-title">Hours</p>
-                        </div>
-                        <div class="single-achievement">
-                          <h3 class="counter"><span id="minutes">00</span></h3>
-                          <p class="counter-title">Mins</p>
-                        </div>
-                        <div class="single-achievement">
-                          <h3 class="counter"><span id="seconds">00</span></h3>
-                          <p class="counter-title">Secs</p>
-                        </div>
-                      </div>
+                    <div class="col-12 col-md-4">
+                      <button type="submit" class="btn btn-outline-dark w-100">
+                        <i class="bi bi-send-fill me-2"></i> Subscribe
+                      </button>
                     </div>
                   </div>
-                  
+                </form>
+              </div>
             </div>
+      
+            <!-- Countdown Column -->
+            <div class="col-lg-6 col-md-12 text-center">
+              <div class="s-intro__content-sep mb-4">
+                <span></span>
+                <span class="time-left">Time left until launch</span>
+                <span></span>
+              </div>
+              <div class="countdown-grid d-flex justify-content-center flex-wrap gap-4">
+                <div class="single-achievement">
+                  <h3 class="counter"><span id="days">00</span></h3>
+                  <p class="counter-title">Days</p>
+                </div>
+                <div class="single-achievement">
+                  <h3 class="counter"><span id="hours">00</span></h3>
+                  <p class="counter-title">Hours</p>
+                </div>
+                <div class="single-achievement">
+                  <h3 class="counter"><span id="minutes">00</span></h3>
+                  <p class="counter-title">Mins</p>
+                </div>
+                <div class="single-achievement">
+                  <h3 class="counter"><span id="seconds">00</span></h3>
+                  <p class="counter-title">Secs</p>
+                </div>
+              </div>
+            </div>
+      
+          </div>
         </div>
-    </section>
+      </section>
+      
     <!-- End Achievement Area -->
  
+    <!-- Confirmation Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-4">
+        <div class="modal-body">
+          <h5 class="mb-3">🎉 Thank you! 🎉</h5>
+          <p>We'll keep you updated on all the latest <strong>Stamp°D</strong> news!</p><br>
+          <button type="button" class="btn btn-outline-dark mt-3" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Start Team Area -->
     <section id="team" class="team section">
@@ -350,7 +366,7 @@
                 <div class="col-12">
                     <div class="section-title">
                         <h3 class="wow zoomIn" data-wow-delay=".2s">Founders</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Meat The Founders</h2>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Meet The Founders</h2>
                         <!-- <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
                             Ipsum available, but the majority have suffered alteration in some form.</p> -->
                     </div>
@@ -648,7 +664,15 @@
             append: " ",
         });
         cu.start();
+
+
+         // Set your launch/end date here (YYYY-MM-DDTHH:MM:SS format)
+  const launchDate = new Date("2025-06-01T00:00:00").getTime();
+
     </script>
+    <!-- Bootstrap Bundle JS (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

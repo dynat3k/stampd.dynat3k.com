@@ -2055,7 +2055,7 @@ ol {
   background-color: black;
   padding: 10px;
   border-radius: 3px;
-  text-align: center !important; 
+  /* margin-left: 25%; */
 }
 
 
@@ -4955,3 +4955,81 @@ blockquote span {
   color: #ff6b81;
   background-color: #fff;
 }
+
+
+/*New KIT section styling*/
+
+.hero-area {
+  background-color: #FF6F61; /* light gray or any background */
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.newsletter-form input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.newsletter-form .btn {
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.single-achievement {
+  min-width: 100px;
+}
+
+.single-achievement h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.single-achievement p {
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.s-intro__content-sep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.s-intro__content-sep span:first-child,
+.s-intro__content-sep span:last-child {
+  flex: 1;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.time-left {
+  /* font-weight: 600; */
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content .mb-3 {
+  color: #FF6F61;
+}
+
+
+/* #confirmationModal {
+  display: block !important;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  z-index: 9999;
+} */

@@ -643,7 +643,8 @@ progress {
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    margin-top: 15px;
 }
 
 @media (min-width:576px) {
@@ -1409,6 +1410,10 @@ progress {
     .col-lg-3 {
         flex: 0 0 auto;
         width: 25%
+    }
+
+    .time {
+        width: 50%
     }
 
     .col-lg-4 {

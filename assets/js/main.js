@@ -88,3 +88,71 @@ Author: GrayGrids
 
 
 })();
+
+//Launch date
+const launchDate = new Date("2025-07-01T00:00:00").getTime();
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = launchDate - now;
+  
+    // Time calculations
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+
+    document.getElementById("days").textContent = days.toString().padStart(2, '0');
+    document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+  
+    //stop timer when complete
+    if (distance < 0) {
+      clearInterval(timer);
+      document.getElementById("days").textContent = "00";
+      document.getElementById("hours").textContent = "00";
+      document.getElementById("minutes").textContent = "00";
+      document.getElementById("seconds").textContent = "00";
+      // might show a message to display when timer is up
+    }
+  }
+  
+ 
+  const timer = setInterval(updateCountdown, 1000);
+  updateCountdown(); 
+
+
+   /* EmailJS
+    * ---------------------------------------------------- */ 
+
+   document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('mc-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        let params = {
+            contact_email: document.getElementById("mce-EMAIL").value
+        };
+
+        emailjs.send('service_cxza28b', 'template_g6rgrm2', params)
+            .then(function(response){
+                openModal();
+            })
+            .catch(function(error){
+                alert('Failed to send email. Please try again.');
+            });
+
+            function openModal() {
+                const modal = new bootstrap.Modal(document.getElementById("confirmationModal"));
+                modal.show();
+              }
+              
+document.getElementById('modal-button').addEventListener('click', closeModal)
+        function closeModal() {
+            const modal = document.getElementById("confirmationModal");
+            modal.style.display = "none";
+        }
+document.getElementById('mce-EMAIL').value = '';
+    });
+});
