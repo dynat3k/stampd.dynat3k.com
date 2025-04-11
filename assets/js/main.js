@@ -68,13 +68,21 @@ Author: GrayGrids
     var pageLink = document.querySelectorAll('.page-scroll');
 
     pageLink.forEach(elem => {
-        elem.addEventListener('click', e => {
-            e.preventDefault();
-            document.querySelector(elem.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth',
-                offsetTop: 1 - 60,
+      elem.addEventListener('click', e => {
+        const href = elem.getAttribute('href');
+    
+        // Only smooth scroll if href starts with "#" (same-page section)
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth'
             });
-        });
+          }
+        }
+        
+      });
     });
 
     // WOW active
