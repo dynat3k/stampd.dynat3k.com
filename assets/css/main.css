@@ -1546,7 +1546,7 @@ ol {
 
 @media (max-width: 767px) {
   .header {
-    padding: 18px 0 !important;
+    padding-bottom: 20px !important;
   }
   .header .mobile-menu-btn .toggler-icon {
     background-color: #fff;
@@ -1658,6 +1658,7 @@ ol {
 
 .header .navbar-brand img {
   width: 160px;
+  /* height: 36.69px; */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1769,6 +1770,7 @@ ol {
 
 .mobile-menu-btn {
   padding: 0px;
+  padding-top: 25px;
 }
 
 .mobile-menu-btn:focus {
